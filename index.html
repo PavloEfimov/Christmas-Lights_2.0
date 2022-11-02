@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Lights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="circles" id="circles1" >
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+            <div class="circle circle6"></div>
+            <div class="circle circle7"></div>
+        </div>
+        <div class="circles" id="circles2" hidden >
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <div class="circles" id="circles3" hidden>
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <div class="circles" id="circles4" hidden>
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <div class="circles" id="circles5" hidden >
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <div class="circles" id="circles6" hidden>
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <div class="circles" id="circles7" hidden>
+            <div class="circle circle1" ></div>
+            <div class="circle circle2" ></div>
+            <div class="circle circle3" ></div>
+            <div class="circle circle4" ></div>
+            <div class="circle circle5" ></div>
+            <div class="circle circle6" ></div>
+            <div class="circle circle7" ></div>
+        </div>
+        <button class="btn" id="btn">start</button>
+        <div class="interval">
+            <span>current interval: </span><span id="intervalDisplay">100</span><span>ms</span>
+            <div class="divNewIntvl">
+                <label for="setIntvl">set new interval</label>
+                <input type="number" name="setIntvl" id="setIntvl" placeholder="100ms">
+            </div>
+            <div class="intensity">
+                <span>current intensity: </span><span id="intensityDisplay">1</span>
+                <div class="divNewIntensity">
+                    <label for="setIntensity">set new intensity</label>
+                    <input type="number" name="setIntensity" id="setIntensity" placeholder="1">
+                </div>
+            </div>
+            <div class="sizeCircle">
+                <span>current radius of circle: </span><span id="sizeDisplay">25</span><span>px</span>
+                <div class="newSize">
+                    <input type="button" value="NO change size" id="btnChngSize">
+                    <input type="range" name="setSize" id="setSizeRange" value="25">
+                    
+                </div>
+
+            </div>
+
+           
+        </div>
+        <button class="btn" id="btnChngClr">change color</button>
+        <div class="colorPicker" id="colorPicker">
+            <a href="https://g.co/kgs/6KE9cs" target="_blank">choose color</a>
+           <div id="hexDiv"><input type="text" placeholder="enter color in HEX " id="hexValue">& choose circle above</div> 
+        </div>
+        <div id="rows">
+            <h4>rows</h4>
+            <input type="radio" name="rows" value="1" id="row1" checked>
+            <label for="row1">1 row</label>
+            <input type="radio" name="rows" value="2" id="row2">
+            <label for="row2">2 rows</label>
+            <input type="radio" name="rows" value="3" id="row3">
+            <label for="row3">3 rows</label>
+            <input type="radio" name="rows" value="4" id="row4">
+            <label for="row4">4 rows</label>
+            <input type="radio" name="rows" value="5" id="row5">
+            <label for="row5">5 rows</label>
+            <input type="radio" name="rows" value="6" id="row6">
+            <label for="row6">6 rows</label>
+            <input type="radio" name="rows" value="7" id="row7">
+            <label for="row7">7 rows</label>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
